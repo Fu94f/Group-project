@@ -1,0 +1,149 @@
+/* basic font styles */
+body {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-weight: normal;
+    font-style: normal;
+
+    color: white;
+    background-color: rgb(13, 13, 29);  /* this is just a background placeholder */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 32px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 24px;
+}
+
+/* Button styles */
+button {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    background: none;
+
+    padding: 13px 20px 13px 20px;
+
+    border: solid 1px #7BA376;
+    border-radius: 10px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.header__btn__subscribe {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Header styles */
+.header__logo {
+    height: 40px;
+    width: 110px;
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 125px;
+    display: flex;
+    justify-content: center;
+}
+.header__container {
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__item {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 20px 0 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__item:hover {
+    text-decoration: underline;
+}
+
+/* icon styles */
+i {
+    color: #7BA376;
+    font-size: 30px;
+}
+
+/* Footer styles */
+footer {
+    max-width: 1200px;
+    width: 100%;
+    border-top: solid 1px #7BA376;
+    min-height: 150px;
+    display: flex;
+    justify-self: center;
+}
+.footer__container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer__logo {
+    margin-top: 20px;
+    height: 35px;
+    width: 100px;
+    align-self: flex-start;
+}
+
+.footer__navbar {
+    align-self: flex-end;
+}
+
+.footer__navbar__item {
+    margin: 5px;
+}
+
+.footer__follow-us {
+    text-align: center;
+    align-self: flex-end;
+}
