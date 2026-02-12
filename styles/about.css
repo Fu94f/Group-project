@@ -51,3 +51,28 @@ section h2::after {
     opacity: 0.85;
     line-height: 1.6;
 }
+/* MISSION */
+.mission {
+    display: flex;
+    gap: 40px;
+    padding: 70px 10%;
+    align-items: center;
+}
+.mission-text {
+    flex: 1;
+    background: rgba(225,225,225,0.5);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid var(--main-color);
+}
+.mission-text p {
+    opacity: 0.9;
+}
+.mission-image {
+    flex: 1;
+}
+.mission-image img {
+    width: 100%;
+    border-radius: 100%;
+    border-radius: 12px;
+}
