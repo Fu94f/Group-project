@@ -1,20 +1,53 @@
-*{
+/* MAIN COLOR VARIABLE */
+:root {
+    --main-color: #7ba376;
+}
+/* BOX SIZING */
+*, *::before, *::after {
     box-sizing: border-box;
-    font-family: "Space Grotesk", sans-serif;
 }
 body {
     background: #0b0d17;
     color: white;
-    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
 }
 .page {
     height: 100vh;
-    background: linear-gradient(rgba 0,0,0,0.6);
+    background: linear-gradient (rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.page-content {
-    max-width: 700px;
+.page h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+.page p {
+    margin-top: 12px;
+    font-size: 24px;
+    opacity: 0.9;
+}
+/* SECTION TITLES */
+h2 {
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--main-color);
+    margin: 12px auto 0;
+}
+.about {
+    padding: 60px 15%;
+    background: rgba(225,225,225,0.03);
+}
+.about p {
+    text-align: center;
+    opacity: 0.85;
+    line-height: 1.6;
 }
