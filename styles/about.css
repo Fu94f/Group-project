@@ -164,3 +164,39 @@ section h2::after {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
         url("../images/about-images/galaxies.png");
 }
+/* ==== FOOTER ==== */
+.footer {
+    padding: 60px 10%;
+    margin-top: 80px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+}
+/* TOP GREEN LINE */
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    margin-bottom: 40px;
+}
+/* LOGO */
+.footer-logo {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-icon {
+    color: var(--main-color);
+    font-size: 22px;
+}
+/* LINKS */
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
