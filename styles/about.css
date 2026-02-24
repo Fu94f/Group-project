@@ -35,20 +35,17 @@ body {
     opacity: 0.9;
 }
 /* SECTION TITLES */
-h2 {
+.section-title {
     color: var(--main-color);
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 15px;
-}
-section h2::after {
-    content: "";
     display: block;
-    width: 80px;
-    height: 3px;
-    background: var(--main-color);
-    margin: 12px auto 0;
+    margin: 0 auto 15px;
+    width: fit-content;
+    border-bottom: 3px solid var(--main-color);
+    padding-bottom: 8px;
 }
 .about {
     padding: 60px 15%;
@@ -218,6 +215,8 @@ section h2::after {
     color: white;
     transition: 0.3s;
 }
+.card h3:hover,
+.footer-newsletter span:hover,
 .footer-links ul li a:hover {
     color: var(--main-color);
 }
@@ -226,6 +225,7 @@ section h2::after {
     text-decoration: underline;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 /* SOCIAL MEDIA */
 .footer-social {
