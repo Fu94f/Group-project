@@ -2,13 +2,91 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
     background-color:black;
-    font-family:"Space Grotesk", sans-serif;
-    margin: 0;
 }
 
-header{
+
+/* Button styles */
+button {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    background: none;
+
+    padding: 13px 20px 13px 20px;
+
+    border: solid 1px #7BA376;
+    border-radius: 10px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.header__btn__subscribe {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Header styles */
+.header__logo {
+    height: 40px;
+    width: 110px;
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 125px;
+    display: flex;
+    justify-content: center;
+}
+.header__container {
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__item {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 20px 0 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__item:hover {
+    text-decoration: underline;
+}
+
+/* icon styles */
+i {
+    color: #7BA376;
+    font-size: 30px;
+}
+
+/*GALLERY INTRO*/
+
+
+.gallery__intro{
     width: 100%;
     min-height: 100vh;
     background-image:url(/images/green\ space.jpg);
@@ -18,88 +96,8 @@ header{
     flex-direction: column;
 }
 
-nav{
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6); 
-}
 
-.nav__container, .footer__container{
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo-text{
-    font-size: 55px;
-    font-weight: bold;
-    color:white;
-}
-
-.logo-icon{
-    font-size: 40px;
-    color: #7ba376;
-    transform: rotate(-40deg);
-}
-
-.nav__list{
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.nav__link{ 
-    margin: 15px;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0;
-    color:white;
-}
-
-a:hover{
-    color: #7ba376;
-}
-
-.btn{ 
-    font-weight:bold;
-    font-size: 16px;
-    line-height: auto;
-    letter-spacing: 0;
-    border-radius: 6px;
-    border: 2px solid #7ba376;
-}    
-
-.btn__subscribe{
-    width: 130px;
-    height: 35px;
-    color:white;
-    background-color:transparent; 
-    margin-left: 20px; 
-}
-
-.btn:hover{
-    color: #7ba376;
-}
-
-.btn__login{
-    width: 110px;;
-    height: 35px;
-    color:#FFFFFF ;
-    background-color:transparent;
-    margin-left: 10px;
-}
-
-.header__text{
+.gallery__intro-text{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -121,7 +119,6 @@ a:hover{
     font-weight: 400;
     margin-top: 0;
 }
-
 
 /*SECTION CARD*/
 
@@ -417,71 +414,45 @@ a:hover{
 
 /*FOOTER*/
 
-
-.footer{
-    width: 100%;
+footer {
     max-width: 1200px;
-    min-height: 308px;
-    margin:0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-.footer__border{
     width: 100%;
-    max-width: 1330px;
+    border-top: solid 1px #7BA376;
+    min-height: 150px;
     display: flex;
     justify-self: center;
-    border-top: 1px solid #7ba376;
-    margin: 40px;
 }
 
-.footer__container{
+.footer__container {
+    max-width: 1200px;
+    width: 100%;
     display: flex;
-    justify-content:space-between;
-    gap:60px;
-}
-
-.footer__column{
-    list-style:none;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-}
-
-.footer__item{
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 1 ;
-    letter-spacing:0;
-    color:white;
-    text-decoration: none;
-}
-
-.footer__icon-box {
-   text-align: center;  
-}
-
-.footer__column-middle{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.footer__column-bottom{
-    display: flex;
-    justify-content: center;
+.footer__logo {
+    margin-top: 20px;
+    height: 35px;
+    width: 100px;
+    align-self: flex-start;
 }
 
+.footer__navbar {
+    align-self: flex-end;
+}
 
-.footer__icon{
+.footer__navbar__item {
     margin: 5px;
-    font-size: 40px;
-    color: #7ba376;
 }
-    
-    
-    
 
+.footer__follow-us {
+    text-align: center;
+    align-self: flex-end;
+}
+
+#navbar__Contact {
+    color: #7BA376;
+}
 
