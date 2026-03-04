@@ -1,4 +1,4 @@
-  /* HEADER & FOOTER STYLES */
+    /* HEADER & FOOTER STYLES */
 /* basic font styles */
 body {
     font-family: "Space Grotesk", sans-serif;
@@ -152,6 +152,8 @@ footer {
 #navbar__Contact {
     color: #7BA376;
 }
+
+/* ^HEADER & FOOTER STYLES^ */
 
 
 .form__container {
