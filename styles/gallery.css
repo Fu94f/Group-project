@@ -186,6 +186,7 @@ a:hover{
     transform: scale(1.1);
 }
 
+
 .cards__title{
     font-weight: bold;
     font-size: 20px;
@@ -382,6 +383,34 @@ a:hover{
     justify-content: center;
     align-items: center;
 
+}
+
+
+.img__name{
+    width: 250px;
+    height:50px ;  
+    padding:10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:-50px;
+    transition: bottom 0.3 ease;
+    font-size:20px;
+    color: white;
+}
+
+
+.box__img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.box__img:hover .img__name{
+    height: 100px;
+    bottom: 0px;
+ 
+    background-color: rgba(123, 163, 118, 0.7) ;
 }
 
 /*FOOTER*/
