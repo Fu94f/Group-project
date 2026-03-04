@@ -1,0 +1,252 @@
+/* MAIN COLOR VARIABLE */
+:root {
+    --main-color: #7ba376;
+}
+/* BOX SIZING */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    background: #0b0d17;
+    background-image: url("../images/about-images/stars-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+.page {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), 
+                url("../images/about-images/nebula2.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+.page p {
+    margin-top: 12px;
+    font-size: 24px;
+    opacity: 0.9;
+}
+/* SECTION TITLES */
+.section-title {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto 15px;
+    width: fit-content;
+    border-bottom: 3px solid var(--main-color);
+    padding-bottom: 8px;
+}
+.about {
+    padding: 60px 15%;
+    background: rgba(225,225,225,0.03);
+}
+.about p {
+    text-align: center;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+/* MISSION */
+.mission {
+    display: flex;
+    gap: 40px;
+    padding: 70px 10%;
+    align-items: center;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.mission-text {
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    padding: 30px;
+    border-radius: 12px;
+}
+.mission-text p {
+    opacity: 0.9;
+}
+.mission-image {
+    flex: 1;
+}
+/* FLOATING IMAGE ANIMATION */
+.mission-image img {
+    width: 100%;
+    border-radius: 12px;
+    animation: floatPlanet 4s ease-in-out infinite;
+    transition: 0.4s;
+}
+@keyframes floatPlanet {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0px);}
+}
+/* MISSION HOVER */
+.mission-text:hover,
+.mission-image img:hover {
+    box-shadow: 0 0 25px rgba(123, 163, 118, 0.8);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.learn {
+    padding: 70px 10%;
+}
+.card {
+    position: relative;
+    height: 220px;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px rgba(123, 163, 118, 0.5);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 16px;
+}
+.card h3,
+.card p {
+    position: relative;
+    z-index: 2;
+}
+/* BACKGROUND IMAGE FOR CARDS */
+.planets {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+        url("../images/about-images/bground-planets.png");
+}
+.stars {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+        url("../images/about-images/stars.png");
+}
+.galaxies {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+        url("../images/about-images/galaxies.png");
+}
+/* ==== FOOTER ==== */
+.footer {
+    padding: 60px 10%;
+    margin-top: 80px;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+/* TOP GREEN LINE */
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background: var(--main-color);
+    margin-bottom: 5px;
+}
+/* LAYOUT */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    column-gap: 80px;
+}
+/* LOGO */
+.footer-logo {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-icon {
+    color: var(--main-color);
+    font-size: 22px;
+    transform: rotate(-45deg);
+}
+.footer-links,
+.footer-newsletter,
+.footer-social {
+    margin-top: 30px;
+}
+/* LINKS */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.card h3:hover,
+.footer-newsletter span:hover,
+.footer-links ul li a:hover {
+    color: var(--main-color);
+}
+/* NEWSLETTER */
+.footer-newsletter span {
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+/* SOCIAL MEDIA */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    color: var(--main-color);
+    font-size: 24px;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: white;
+}
+

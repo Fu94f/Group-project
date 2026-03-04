@@ -1,0 +1,32 @@
+css
+
+/*HOME PAGE STYLES*/
+
+/* Hero section styles */
+.hero {
+    background-image: url("../images/night.sky.nasa.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero overlay styles */
+.hero__overlay {
+    background-color: rgba(0,0,0,0.6);
+    padding: 60px;
+    border-radius: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Main button styles */
+.main-btn {
+    background-color: #7BA376;
+    border: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
