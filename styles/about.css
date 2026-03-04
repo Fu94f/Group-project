@@ -162,6 +162,7 @@ body {
         url("../images/about-images/galaxies.png");
 }
 /* ==== FOOTER ==== */
+/*
 .footer {
     padding: 60px 10%;
     margin-top: 80px;
@@ -169,21 +170,21 @@ body {
     backdrop-filter: blur(4px);
 }
 /* TOP GREEN LINE */
-.footer-line {
+/*.footer-line {
     width: 100%;
     height: 1px;
     background: var(--main-color);
     margin-bottom: 5px;
-}
+}*/
 /* LAYOUT */
-.footer-container {
+/*.footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
     column-gap: 80px;
-}
+}*/
 /* LOGO */
-.footer-logo {
+/*.footer-logo {
     color: white;
     margin: 0;
     font-size: 32px;
@@ -203,7 +204,7 @@ body {
     margin-top: 30px;
 }
 /* LINKS */
-.footer-links ul {
+/*.footer-links ul {
     list-style: none;
     padding: 0;
 }
@@ -214,21 +215,21 @@ body {
     text-decoration: none;
     color: white;
     transition: 0.3s;
-}
+}*/
 .card h3:hover,
 .footer-newsletter span:hover,
 .footer-links ul li a:hover {
     color: var(--main-color);
 }
 /* NEWSLETTER */
-.footer-newsletter span {
+/*.footer-newsletter span {
     text-decoration: underline;
     text-align: center;
     color: white;
     cursor: pointer;
 }
 /* SOCIAL MEDIA */
-.footer-social {
+/*.footer-social {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,5 +249,5 @@ body {
 }
 .social-icons a:hover {
     color: white;
-}
+}*/
 
