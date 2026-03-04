@@ -14,27 +14,30 @@
 </head>
 <body>
     <header>
-         <nav>
-            <div class="nav__container">
-                <div class="nav__logo logo">
-                    <p class="nav__logo-text logo-text">ETI</p><span class="nav__logo-icon logo-icon"><i class="icon-rocket fa-solid fa-rocket"> </i></span>
-                </div>
-                <ul class="nav__list">
-                  <li class="nav__item"><a href="#" class="nav__link">Home</a></li> 
-                  <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                  <li class="nav__item"><button type="button" class="btn btn__subscribe">Subscribe</button></li>
-                  <li class="nav__item"><button type="button" class="btn btn__login">Log in</button></li>
-                </ul>
+        <div class="header__container">
+            <img src="/images/Logo-ETI.png" alt="logo" class="header__logo">
+
+            <ul class="navbar">
+                <li class="navbar__item" id="navbar__home"><a href="/pages/home.html">Home</a></li>
+                <li class="navbar__item" id="navbar__about"><a href="/pages/about.html">About</a></li>
+                <li class="navbar__item" id="navbar__Gallery"><a href="/pages/gallery.html">Gallery</a></li>
+                <li class="navbar__item" id="navbar__Contact"><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="header">
+                <button class="header">Subscribe</button>
+                <button class="header__btn__log-in">Log in</button>
             </div>
-        </nav>
-        <div class="header__text">
-            <h1 class="main__title"> GALLERY </h1>
-            <p class="subtitle">Explore the universe with us</p>
+        
         </div>
     </header>
-    <main> 
+    <main>
+        <section class="gallery__intro">
+            <div class="gallery__intro-text">
+                <h1 class="main__title"> GALLERY </h1>
+                <p class="subtitle">Explore the universe with us</p>
+            </div>
+        </section>
         <section class="cards">
             <div class="cards__text">
                 <h2 class="cards__main-title">WELCOME TO THE INFINITE AND BEYOND</h2>
@@ -218,31 +221,24 @@
         </section>
        
     </main>
-    <footer>   
-        <div class="footer__border"></div>
-        <div class="footer__container"> 
-            <div class="footer__logo logo">
-                <p class="footer__logo-text logo-text">ETI</p><span class="footer__logo-icon logo-icon"><i class=" icon-rocket fa-solid fa-rocket"> </i></span>
-            </div>
-             <ul class="footer_column">
-                    <li><a href="#" class="footer__item">Home</a></li>
-                    <li><a href="#" class="footer__item">About</a></li>
-                    <li><a href="#" class="footer__item">Contacts</a></li>
-                    <li><a href="#" class="footer__item">Gallery</a></li>
+    <footer>
+        <div class="footer__container">
+            <img src="/images/Logo-ETI.png" alt="logo" class="footer__logo">
+                
+            <ul class="footer__navbar">
+                <li class="footer__navbar__item"><a href="/pages/home.html">Home</a></li>
+                <li class="footer__navbar__item"><a href="/pages/about.html">About</a></li>
+                <li class="footer__navbar__item"><a href="/pages/gallery.html">Gallery</a></li>
+                <li class="footer__navbar__item"><a href="/pages/contact.html">Contact</a></li>
             </ul>
-            <ul class="footer_column footer_column-middle">
-                   <li><a href="#" class="footer__item">subscribe to our</a></li>
-                   <li><a href="#" class="footer__item">news letter</a></li>
-            </ul>
-            <div class="footer__column footer__column-bottom">
-                <p class="footer__item">Follow us on social media</p>
-                <div class="footer__icon-box">
-                    <a href=""><i class=" footer__icon fa-brands fa-instagram"></i></a><span><a href=""><i class="footer_icon fa-brands fa-facebook"></i></a></span>
-                </div>
-            </div>
-        </div> 
 
-    </footer>
-    
+            <div class="footer__follow-us">
+                <p>Follow us on social media!</p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer> 
+        
 </body>
 </html>
