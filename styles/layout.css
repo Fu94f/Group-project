@@ -138,6 +138,9 @@ footer {
 
 .footer__navbar {
     align-self: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer__navbar__item {
@@ -150,6 +153,24 @@ footer {
 }
 
 #navbar__Contact {
+    color: #7BA376;
+}
+/* ==== HOVER SOCIAL ICON ====*/
+.footer__follow-us i {
+    color: #7BA376;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.footer__follow-us i:hover {
+    color: white;
+    cursor: pointer;
+}
+.footer__navbar__item a {
+    color: white;
+    transition: 0.3s;
+}
+
+.footer__navbar__item a:hover {
     color: #7BA376;
 }
 
