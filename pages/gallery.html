@@ -7,90 +7,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/87e72e830b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/gallery.css">
     <title>Gallery</title>
 </head>
 <body>
     <header>
-         <nav>
-            <div class="nav_container">
-                <div class="nav_logo logo">
-                    <p class="nav_logo-text logo-text">ETI</p><span class="nav_logo-icon logo-icon"><i class="icon-rocket fa-solid fa-rocket"> </i></span>
-                </div>
-                <ul class="nav_list">
-                  <li class="nav_item"><a href="#" class="nav_link">Home</a></li> 
-                  <li class="nav_item"><a href="#" class="nav_link">About</a></li>
-                  <li class="nav_item"><a href="#" class="nav_link">Gallery</a></li>
-                  <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
-                  <li class="nav_item"><button type="button" class="btn btn--subscribe">Subscribe</button></li>
-                  <li class="nav_item"><button type="button" class="btn btn--login">Log in</button></li>
-                </ul>
+        <div class="header__container">
+            <img src="/images/Logo-ETI.png" alt="logo" class="header__logo">
+
+            <ul class="navbar">
+                <li class="navbar__item" id="navbar__home"><a href="/pages/home.html">Home</a></li>
+                <li class="navbar__item" id="navbar__about"><a href="/pages/about.html">About</a></li>
+                <li class="navbar__item" id="navbar__Gallery"><a href="/pages/gallery.html">Gallery</a></li>
+                <li class="navbar__item" id="navbar__Contact"><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="header">
+                <button class="header">Subscribe</button>
+                <button class="header__btn__log-in">Log in</button>
             </div>
-        </nav>
-        <div class="header_text">
-            <h1 class="main-title"> GALLERY </h1>
-            <p class="subtitle">Explore the universe with us</p>
+        
         </div>
     </header>
-    <main> 
+    <main>
+        <section class="gallery__intro">
+            <div class="gallery__intro-text">
+                <h1 class="main__title"> GALLERY </h1>
+                <p class="subtitle">Explore the universe with us</p>
+            </div>
+        </section>
         <section class="cards">
-            <div class="cards_text">
-                <h2 class="cards_main-title">WELCOME TO THE INFINITE AND BEYOND</h2>
-                <p class="cards_subtitle">
+            <div class="cards__text">
+                <h2 class="cards__main-title">WELCOME TO THE INFINITE AND BEYOND</h2>
+                <p class="cards__subtitle">
                     Step beyond the boundaries of Earth and explore the infinite wonders of the universe. This gallery captures the beauty, mystery, and vastness 
                     of space, from distant galaxies and glowing nebulae to breathtaking views of our own planet from above. 
                  <br>
                     Each image is a reminder of how small we are, and yet how extraordinary the cosmos truly is.   
                 </p>
             </div>
-            <div class="cards_container">
-                    <div class="cards_item">
-                        <div class="image_zoom">
-                         <img src="/images/jupiters_red_spot_1.jpg" alt="jupiter's red spot view" title="jupiter's red spot view" class="cards_image">
+            <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="image__zoom">
+                         <img src="/images/jupiters_red_spot_1.jpg" alt="jupiter's red spot view" title="jupiter's red spot view" class="cards__image">
                         </div>
-                         <h3 class="cards_title"> Jupiter’s Great Red Spot: A Storm Older Than Science</h3>
-                        <p class="cards_description"> The Great Red Spot is a massive, rotating storm system that has existed for at least 300 years.</p> 
-                        <div class="icon_box">
-                            <a href="#gallery1" class="cards_link">Take a pick <i class=" cards_icon fa-solid fa-magnifying-glass-arrow-right "></i></a>
+                         <h3 class="cards__title"> Jupiter’s Great Red Spot: A Storm Older Than Science</h3>
+                        <p class="cards__description"> The Great Red Spot is a massive, rotating storm system that has existed for at least 300 years.</p> 
+                        <div class="icon__box">
+                            <a href="#gallery__redspot" class="cards__link">Take a pick <i class=" cards__icon fa-solid fa-magnifying-glass-arrow-right animate__animated animate__pulse animate__infinite "></i></a>
                         </div>  
                     </div>
-                    <div class="cards_item">
-                        <div class="image_zoom">
-                         <img src="/images/55069045764_bdfa549b6c_o.jpg" alt="nebula" title="nebula" class="cards_image">
+                    <div class="cards__item">
+                        <div class="image__zoom">
+                         <img src="/images/55069045764_bdfa549b6c_o.jpg" alt="nebula" title="nebula" class="cards__image">
                         </div>
-                        <h3 class="cards_title">Stellar Nurseries: Where Stars Are Born</h3>
-                        <p class="cards_description">Nebulas are regions of gas and dust where new stars ignite under intense pressure and heat.</p>
-                        <div class="icon_box">
-                            <a href="#gallery2" class="cards_link">Take a pick <i class=" cards_icon fa-solid fa-magnifying-glass-arrow-right "></i></a>
+                        <h3 class="cards__title">Stellar Nurseries: Where Stars Are Born</h3>
+                        <p class="cards__description">Nebulas are regions of gas and dust where new stars ignite under intense pressure and heat.</p>
+                        <div class="icon__box">
+                            <a href="#gallery__nebulae" class="cards__link">Take a pick <i class=" cards__icon fa-solid fa-magnifying-glass-arrow-right animate__animated animate__pulse animate__infinite"></i></a>
                         </div>  
                     </div>
-                    <div class="cards_item">
-                        <div class="image_zoom">
-                         <img src="/images/airglow_img.jpg" alt="airglow effect" title="airglow" class="cards_image">
+                    <div class="cards__item">
+                        <div class="image__zoom">
+                         <img src="/images/airglow_img.jpg" alt="airglow effect" title="airglow" class="cards__image">
                         </div>
-                        <h3 class="cards_title">Earth’s Hidden Glow: Green Glittery Effect</h3>
-                        <p class="cards_description"> Earth emits a faint green glow known as airglow, caused by atmospheric gases releasing energy after sunset.</p> 
-                        <div class="icon_box">
-                            <a href="#gallery3" class="cards_link">Take a pick<i class=" cards_icon fa-solid fa-magnifying-glass-arrow-right "></i></a>
+                        <h3 class="cards__title">Earth’s Hidden Glow: Green Glittery Effect</h3>
+                        <p class="cards__description"> Earth emits a faint green glow known as airglow, caused by atmospheric gases releasing energy after sunset.</p> 
+                        <div class="icon__box">
+                            <a href="#gallery__airglow" class="cards__link">Take a pick<i class=" cards__icon fa-solid fa-magnifying-glass-arrow-right animate__animated animate__pulse animate__infinite"></i></a>
                         </div>  
                     </div>
-                    <div class="cards_item">
-                        <div class="image_zoom">
-                         <img src="/images/lo_moon_jupiter.jpg" alt="jupiter's moon" title="jupiter's moon" class="cards_image">
+                    <div class="cards__item">
+                        <div class="image__zoom">
+                         <img src="/images/Vulcano_Io.jpg" alt="jupiter's moon" title="jupiter's moon" class="cards__image">
                         </div>
-                        <h3 class="cards_title"> Io: The Volcanic Moon That Never Sleeps</h3>
-                        <p class="cards_description"> Io, a moon of Jupiter, is the most volcanically active body in the solar system. Over 400 active volcanoes reshape its surface continuously</p> 
-                        <div class="icon_box">
-                            <a href="#gallery4" class="cards_link">Take a pick<i class=" cards_icon fa-solid fa-magnifying-glass-arrow-right"></i></a>
+                        <h3 class="cards__title"> Io: The Volcanic Moon That Never Sleeps</h3>
+                        <p class="cards__description"> Io, a moon of Jupiter, is the most volcanically active body in the solar system. Over 400 active volcanoes reshape its surface continuously</p> 
+                        <div class="icon__box">
+                            <a href="#gallery__volcano" class="cards__link">Take a pick<i class=" cards__icon fa-solid fa-magnifying-glass-arrow-right animate__animated animate__pulse animate__infinite"></i></a>
                         </div>  
                     </div>
             </div>
         </section>
         <section> 
             <div class="intro">
-                <h2 class="intro_maintitle"> ARCHIVE</h2>
-                <p class="intro_description"> 
+                <h2 class="intro__maintitle"> ARCHIVE</h2>
+                <p class="intro__description"> 
                   Carefully curated by our team of planetary and astrophysics researchers, this archive preserves the wonders of space, inviting visitors to a visual journey
                   beyond Earth. From distant galaxies and glowing nebulae to detailed views of planets and stars, each image represents a moment of discovery and exploration.
                   Explore our growing collection of photographs to experience the beauty and mystery of the universe. 
@@ -101,22 +104,22 @@
 
         <section>
             <div>
-                <div class="gallery_text">
-                   <h2 class="gallery_title" id="gallery1">Jupiter’s Great Red Spot is a never ending storm</h2>
-                   <p class="gallery_description">That red swirl on Jupiter is a storm that’s been raging for over 300 years. 
+                <div class="gallery__text">
+                   <h2 class="gallery__title" id="gallery__redspot">Jupiter’s Great Red Spot is a never ending storm</h2>
+                   <p class="gallery__description">That red swirl on Jupiter is a storm that’s been raging for over 300 years. 
                      Mind-blowing detail: It’s so big that Earth could fit inside it.
                   </p>
                 </div>
-                <div class="gallery2">
-                    <div class="gallery_big">
-                     <img src="/images/jupiters_red_spot_1.jpg" alt="juspiter red spot" class="img_big">
+                <div class="gallery__container">
+                    <div class="gallery__main">
+                     <img src="/images/jupiters_red_spot_1.jpg" alt="juspiter red spot" class="img__big">
                     </div>
 
-                   <div class="gallery_small">
-                    <img src="/images/inside-of-jupiters-great-red-spot-.webp" alt="jupiter red spot" class="img_small">
-                    <img src="/images/Jupiter_Great_Red_Spot.png" alt="jupiter red spot" class="img_small">
-                    <img src="/images/Jupiter_Great_Red_Spot2.png" alt=" jupiter red spot" class="img_small">
-                    <img src="/images/red-spot-jupiter1.webp" alt=" jupiter red spot" class="img_small">
+                   <div class="gallery__cell">
+                    <img src="/images/inside-of-jupiters-great-red-spot-.jpg" alt="jupiter red spot" class="img__small">
+                    <img src="/images/Jupiter_Great_Red_Spot.png" alt="jupiter red spot" class="img__small">
+                    <img src="/images/Jupiter_Great_Red_Spot2.png" alt=" jupiter red spot" class="img__small">
+                    <img src="/images/red-spot-jupiter1.webp" alt=" jupiter red spot" class="img__small">
                    </div>
                 </div> 
 
@@ -125,21 +128,51 @@
         </section>
         <section>
             <div>
-                <div class="gallery_text">
-                   <h2 class="gallery_title" id="gallery2">Nebulae : giant cosmic art studios</h2>
-                   <p class="gallery_description"> Nebulas are huge clouds of gas and dust where stars are born. They come in insane colors because different gases glow under radiation.</p>
+                <div class="gallery__text">
+                   <h2 class="gallery__title" id="gallery__nebulae">Nebulae : giant cosmic art studios</h2>
+                   <p class="gallery__description"> Nebulas are huge clouds of gas and dust where stars are born. They come in insane colors because different gases glow under radiation.</p>
                 </div>
-                <div class="gallery">
-                    <img src="/images/egle nebula.jpg" alt="egle nebula" title="egle-nebula"  class="img_square">
-                    <img src="/images/orion nebula.jpg" alt="orion nebula" title="orian-nebula" class="img_square">
-                    <img src="/images/darkclouds-rosette-nebula.jpg" alt="dark clouds in rosette nebula" title=" rosette-nebula" class="img_square">
-                    <img src="/images/catspaw-nebula.jpg" alt="cats paw nebula" title="catspaw-nebula" class="img_square">
-                    <img src="/images/nebula_1.jpg" alt="nebula" title="nebula" class="img_square">
-                    <img src="/images/andromeda-galaxy-crab-nebula.avif" alt=" crab nebula in andromedas galaxy" title="crab-nebula" class="img_square">
-                    <img src="/images/egle_nebula.jpg" alt=" egle nebula" title="egle-nebula" class="img_square img_square7">
-                    <img src="/images/carina nebula_nasa.jfif" alt=" carin nebula" title="nebula" class="img_square">
-                    <img src="/images/squidnbat-nebula.jpg" alt="squid and bat nebula" title="squidbat-nebula" class="img_square">
-                    <img src="/images/messier_77.jpg" alt="messier 77" title="messier_77" class="img_square">
+                <div class="gallery__nebula">
+                    <div class="box__img">
+                        <img src="/images/egle nebula.jpg" alt="egle nebula" title="egle-nebula"  class="img__square">
+                        <div class="img__name"><h1 class="name">Egles</h1></div>
+                    </div>
+                    <div class="box__img">
+                        <img src="/images/orion nebula.jpg" alt="orion nebula" title="orian-nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Orions</h1></div>
+                    </div>
+                    <div class="box__img">
+                        <img src="/images/darkclouds-rosette-nebula.jpg" alt="dark clouds in rosette nebula" title=" rosette-nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Rosetta</h1></div>
+                    </div>
+                    <div class="box__img">
+                             <img src="/images/catspaw-nebula.jpg" alt="cats paw nebula" title="catspaw-nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Cats paw</h1></div>
+                    </div>
+                    <div class="box__img">
+                       <img src="/images/nebula_1.jpg" alt="nebula" title="nebula" class="img__square">
+                       <div class="img__name"><h1 class="name">N3600</h1></div>
+                    </div>
+                     <div class="box__img">
+                         <img src="/images/andromeda-galaxy-crab-nebula.jpg" alt=" crab nebula in andromedas galaxy" title="crab-nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Crab</h1></div>
+                    </div>
+                     <div class="box__img">
+                        <img src="/images/egle_nebula.jpg" alt=" egle nebula" title="egle nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Egle 3</h1></div>
+                    </div>
+                    <div class="box__img">
+                        <img src="/images/carina nebula_nasa.jpg" alt=" carin nebula" title="nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Carina</h1></div>
+                    </div>
+                    <div class="box__img">
+                        <img src="/images/squidnbat-nebula.jpg" alt="squid and bat nebula" title="squidbat-nebula" class="img__square">
+                        <div class="img__name"><h1 class="name">Squid & Bat</h1></div>
+                    </div>
+                       <div class="box__img">    
+                        <img src="/images/messier_77.jpg" alt="messier 77" title="messier_77" class="img__square">
+                        <div class="img__name"><h1 class="name">Messier 77</h1></div>
+                    </div>
                 </div>
 
             </div>
@@ -147,90 +180,62 @@
         </section>  
         <section>
             <div>
-                <div class="gallery_text">
-                   <h2 class="gallery_title" id="gallery3">Earth glows at night</h2>
-                   <p class="gallery_description">Even in total darkness, Earth gives off a faint green glow called airglow.  Gases in our atmosphere release energy after being hit by sunlight during the day.</p>
+                <div class="gallery__text">
+                   <h2 class="gallery__title" id="gallery__airglow">Earth glows at night</h2>
+                   <p class="gallery__description">Even in total darkness, Earth gives off a faint green glow called airglow.  Gases in our atmosphere release energy after being hit by sunlight during the day.</p>
                 </div>
-                <div class="gallery2">
-                                          <img src="/images/Airglow_earth2.jpg" alt="jupiter red spot" class="img_left img1">
-                                                               <img src="/images/airglow.jpg" alt="juspiter red spot" class="img_square img2 ">
-                     <img src="/images/Airglow_earth.jpg" alt=" jupiter red spot" class="img_square img3">
-                                           <img src="/images/airglow_milkyway.jpg" alt="jupiter red spot" class="img_right img4">
+                <div class="gallery__airglow">
+                    <img src="/images/Airglow_earth2.jpg" alt="jupiter red spot" class=" img--1">
+                    <img src="/images/airglow.jpg" alt="juspiter red spot" class="img--2 ">
+                    <img src="/images/Airglow_earth.jpg" alt=" jupiter red spot" class=" img--3">
+                    <img src="/images/airglow_milkyway.jpg" alt="jupiter red spot" class=" img--4">
 
-
-
-<!--
-                   <div class="gallery_left">
-                      <img src="/images/Airglow_earth2.jpg" alt="jupiter red spot" class="img_left">
-                
-                    </div>
-
-                    <div class="gallery_middle">
-                     <img src="/images/airglow.jpg" alt="juspiter red spot" class="img_square">
-                     <img src="/images/Airglow_earth.jpg" alt=" jupiter red spot" class="img_square">
-                    </div>
-
-                    <div class="gallery_right">
-                      <img src="/images/airglow_milkyway.jpg" alt="jupiter red spot" class="img_right">
-
-                    </div>-->
                 </div>
-                
             </div>
 
         </section>
         <section>
             <div>
-                <div class="gallery_text">
-                   <h2 class="gallery_title" id="gallery4">Volcanoes on Jupiter’s moon Io are the most extreme in the solar system</h2>
-                   <p class="gallery_description">Io is the most volcanically active object we know of with hundreds of active volcanoes,
+                <div class="gallery__text">
+                   <h2 class="gallery__title" id="gallery__volcano">Volcanoes on Jupiter’s moon Io are the most extreme in the solar system</h2>
+                   <p class="gallery__description">Io is the most volcanically active object we know of with hundreds of active volcanoes,
                      some shooting lava hundreds of kilometers into space. The surface is covered in yellow, red, black, and white 
                      from sulfur and lava and it is caused by Jupiter’s massive gravity that squeezes and stretches Io, heating its interior until it basically can’t stop erupting.</p>
                 </div>
-                <div class="gallery2">
-                   <div class="gallery_small">
-                    <img src="/images/io_3 stages.webp" alt="jupiter red spot" class="img_long">
-                    <img src="/images/jupiters-moons-volcanic-surface-with-sulfur-dioxide-plumes2.jpg" alt=" jupiter red spot" class="img_small">
-                    <img src="/images/io-one-of-jupiters-moonsvolcanic-surface-with-sulfur-dioxide-plumes.jpg" alt=" jupiter red spot" class="img_small">
+                <div class="gallery__container">
+                   <div class="gallery__cell">
+                    <img src="/images/io_3 stages.webp" alt="jupiter red spot" class="img__long">
+                    <img src="/images/jupiters-moons-volcanic-surface-with-sulfur-dioxide-plumes2.jpg" alt=" jupiter red spot" class="img__small">
+                    <img src="/images/io-one-of-jupiters-moonsvolcanic-surface-with-sulfur-dioxide-plumes.jpg" alt=" jupiter red spot" class="img__small">
                    </div>
 
-                    <div class="gallery_big">
-                     <img src="/images/lo true color.jpg" alt="juspiter red spot" class="img_big">
+                    <div class="gallery__main">
+                     <img src="/images/lo true color.jpg" alt="juspiter red spot" class="img__big">
                     </div>
 
                 </div> 
-          
-
             </div>
-
         </section>
        
     </main>
-    <footer>   
-        <div class="footer_border"></div>
-        <div class="footer_container"> 
-            <div class="footer_logo logo">
-                <p class="footer_logo-text logo-text">ETI</p><span class="footer_logo-icon logo-icon"><i class=" icon-rocket fa-solid fa-rocket"> </i></span>
-            </div>
-             <ul class="footer_column">
-                    <li><a href="#" class="footer_item">Home</a></li>
-                    <li><a href="#" class="footer_item">About</a></li>
-                    <li><a href="#" class="footer_item">Contacts</a></li>
-                    <li><a href="#" class="footer_item">Gallery</a></li>
+    <footer>
+        <div class="footer__container">
+            <img src="/images/Logo-ETI.png" alt="logo" class="footer__logo">
+                
+            <ul class="footer__navbar">
+                <li class="footer__navbar__item"><a href="/pages/home.html">Home</a></li>
+                <li class="footer__navbar__item"><a href="/pages/about.html">About</a></li>
+                <li class="footer__navbar__item"><a href="/pages/gallery.html">Gallery</a></li>
+                <li class="footer__navbar__item"><a href="/pages/contact.html">Contact</a></li>
             </ul>
-            <ul class="footer_column footer_column-middle">
-                   <li><a href="#" class="footer_item">subscribe to our</a></li>
-                   <li><a href="#" class="footer_item">news letter</a></li>
-            </ul>
-            <div class="footer_column footer_column-bottom">
-                <p class="footer_item">Follow us on social media</p>
-                <div class="footer_icon-box">
-                    <a href=""><i class=" footer_icon fa-brands fa-instagram"></i></a><span><a href=""><i class="footer_icon fa-brands fa-facebook"></i></a></span>
-                </div>
-            </div>
-        </div> 
 
-    </footer>
-    
+            <div class="footer__follow-us">
+                <p>Follow us on social media!</p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer> 
+        
 </body>
 </html>
